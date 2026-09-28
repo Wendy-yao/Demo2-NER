@@ -1,0 +1,5 @@
+torch==1.13.1
+transformers==4.46.3
+numpy==1.24.3
+tqdm==4.70.0
+swanlab==0.7.20

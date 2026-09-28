@@ -1,0 +1,13 @@
+venv/
+.idea/
+__pycache__/
+*.py[cod]
+
+models/
+results/
+swanlog/
+
+*.pt
+*.bin
+
+.env

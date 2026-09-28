@@ -1,0 +1,33 @@
+{
+  "backbones": {
+    "bert-base-chinese": "models/bert-base-chinese",
+    "chinese-bert-wwm": "models/chinese-bert-wwm"
+  },
+  "datasets": {
+    "weibo": {
+      "corpus_dir": "data/weibo",
+      "ckpt_root": "./results/weibo",
+      "batch_size": 16,
+      "epochs": 15
+    },
+    "msra": {
+      "corpus_dir": "data/MSRA",
+      "ckpt_root": "./results/msra",
+      "batch_size": 32,
+      "epochs": 10
+    }
+  },
+  "training": {
+    "seq_len": 128,
+    "warm_frac": 0.1,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "patience": 3,
+    "bert_lr": 2e-5,
+    "classifier_lr": 1e-3,
+    "rng_seed": 42
+  },
+  "model": {
+    "dropout": 0.2
+  }
+}
